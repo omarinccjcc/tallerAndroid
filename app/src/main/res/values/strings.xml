@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Unach</string>
     <string name="title_activity_main">Calculadora</string>
+    <string name="title_activity_u2_t4">U2T4Activity</string>
+    <string name="title_activity_u2_t3">U2T3Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 </resources>
