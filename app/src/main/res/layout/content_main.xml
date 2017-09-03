@@ -5,50 +5,62 @@
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="unach.cl.calculadora.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <EditText
-        android:id="@+id/editText1"
+    <TextView
+        android:id="@+id/txtPantalla"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="29dp"/>
+        android:layout_marginTop="27dp"
+        android:gravity="right"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:id="@+id/relativeLayout1"
-        android:layout_below="@+id/editText1">
+        android:layout_below="@+id/txtPantalla">
 
         <Button
             android:id="@+id/btb7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="7" />
+            android:text="7"
+            android:onClick="numero7"/>
 
         <Button
             android:id="@+id/btb8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="8" />
+            android:text="8"
+            android:onClick="numero8"/>
 
         <Button
             android:id="@+id/btb9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="9" />
+            android:text="9"
+            android:onClick="numero9"/>
 
         <Button
             android:id="@+id/btbDividir"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="/" />
+            android:text="/"
+            android:onClick="division"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="fill_parent"
@@ -62,28 +74,32 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="4" />
+            android:text="4"
+            android:onClick="numero4"/>
 
         <Button
             android:id="@+id/btb5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="5" />
+            android:text="5"
+            android:onClick="numero5"/>
 
         <Button
             android:id="@+id/btb6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="6" />
+            android:text="6"
+            android:onClick="numero6"/>
 
         <Button
             android:id="@+id/btbMultiplicar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="x" />
+            android:text="x"
+            android:onClick="multiplicacion"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="fill_parent"
@@ -97,28 +113,32 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="1" />
+            android:text="1"
+            android:onClick="numero1"/>
 
         <Button
             android:id="@+id/btb2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="2" />
+            android:text="2"
+            android:onClick="numero2"/>
 
         <Button
             android:id="@+id/btb3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="3" />
+            android:text="3"
+            android:onClick="numero3"/>
 
         <Button
             android:id="@+id/btbResta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="-" />
+            android:text="-"
+            android:onClick="resta"/>
     </LinearLayout>
 
 
@@ -134,7 +154,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="0" />
+            android:text="0"
+            android:onClick="numero0"/>
 
         <Button
             android:id="@+id/btbPunto"
@@ -148,14 +169,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="=" />
+            android:text="="
+            android:onClick="igual"/>
 
         <Button
             android:id="@+id/btbSuma"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="+" />
+            android:text="+"
+            android:onClick="suma"/>
     </LinearLayout>
 
     <LinearLayout
@@ -163,13 +186,15 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:id="@+id/relativeLayout5"
-        android:layout_below="@+id/relativeLayout4">
+        android:layout_below="@+id/relativeLayout4"
+        android:layout_alignParentStart="true">
         <Button
             android:id="@+id/btbBorrar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Borrar" />
+            android:text="Borrar"
+            android:onClick="borrar"/>
     </LinearLayout>
 
 </RelativeLayout>
